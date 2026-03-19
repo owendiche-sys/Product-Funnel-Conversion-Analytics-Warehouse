@@ -1,0 +1,181 @@
+user_id,first_seen_date,signup_date,activation_date,acquisition_channel,country,device_type
+USER0001,2025-10-16,2025-10-17,2025-10-31,Organic Search,Canada,mobile
+USER0002,2025-04-18,2025-04-18,2025-04-18,Paid Ads,Nigeria,mobile
+USER0003,2025-04-09,,,Organic Search,Canada,tablet
+USER0004,2024-08-04,2024-08-14,2024-08-21,Direct,USA,tablet
+USER0005,2024-02-21,,,Social Media,Nigeria,mobile
+USER0006,2024-06-07,2024-06-15,2024-06-20,Organic Search,USA,mobile
+USER0007,2024-02-22,2024-02-27,2024-03-08,Organic Search,Germany,desktop
+USER0008,2024-09-12,,,Social Media,Canada,tablet
+USER0009,2024-01-25,2024-01-26,,Social Media,Germany,desktop
+USER0010,2025-11-11,2025-11-12,2025-11-16,Direct,Nigeria,desktop
+USER0011,2025-09-19,,,Social Media,Nigeria,desktop
+USER0012,2025-12-13,2025-12-18,2025-12-24,Organic Search,Nigeria,desktop
+USER0013,2025-09-28,2025-10-07,,Organic Search,USA,desktop
+USER0014,2025-05-16,,,Organic Search,Canada,tablet
+USER0015,2024-10-13,2024-10-16,2024-10-27,Direct,Canada,tablet
+USER0016,2024-11-07,2024-11-13,2024-11-25,Organic Search,USA,mobile
+USER0017,2024-11-26,2024-12-06,,Referral,UK,mobile
+USER0018,2025-09-15,2025-09-23,2025-09-26,Social Media,USA,desktop
+USER0019,2025-07-18,2025-07-20,,Organic Search,USA,tablet
+USER0020,2024-05-09,,,Referral,Nigeria,desktop
+USER0021,2025-03-30,2025-03-30,2025-04-04,Organic Search,Canada,mobile
+USER0022,2024-04-19,2024-04-23,2024-05-06,Organic Search,Nigeria,desktop
+USER0023,2024-09-20,,,Direct,Germany,desktop
+USER0024,2025-01-25,2025-02-01,2025-02-15,Social Media,Canada,mobile
+USER0025,2024-08-29,2024-09-08,2024-09-14,Direct,UK,tablet
+USER0026,2024-08-09,,,Social Media,USA,desktop
+USER0027,2025-05-05,2025-05-12,2025-05-13,Direct,Germany,tablet
+USER0028,2024-03-28,,,Organic Search,UK,tablet
+USER0029,2025-08-14,2025-08-15,2025-08-23,Referral,USA,tablet
+USER0030,2025-03-29,2025-04-02,2025-04-10,Social Media,Germany,tablet
+USER0031,2024-08-14,2024-08-15,2024-08-18,Paid Ads,USA,mobile
+USER0032,2024-03-19,2024-03-25,2024-04-02,Social Media,UK,tablet
+USER0033,2025-07-06,2025-07-15,2025-07-21,Social Media,Nigeria,mobile
+USER0034,2024-07-23,2024-07-30,,Social Media,USA,desktop
+USER0035,2024-04-23,2024-04-26,2024-05-08,Social Media,USA,desktop
+USER0036,2024-09-03,2024-09-11,,Referral,USA,tablet
+USER0037,2024-09-16,2024-09-26,2024-10-08,Social Media,Canada,mobile
+USER0038,2025-12-09,,,Paid Ads,Nigeria,desktop
+USER0039,2025-03-30,2025-04-05,2025-04-09,Social Media,Nigeria,mobile
+USER0040,2025-04-07,,,Organic Search,Germany,mobile
+USER0041,2025-04-23,2025-04-24,2025-04-30,Social Media,Nigeria,mobile
+USER0042,2024-03-02,2024-03-07,2024-03-12,Organic Search,Germany,desktop
+USER0043,2025-06-01,2025-06-01,2025-06-08,Paid Ads,USA,mobile
+USER0044,2025-08-15,2025-08-23,2025-09-01,Referral,UK,tablet
+USER0045,2025-05-06,2025-05-16,2025-05-30,Paid Ads,Canada,desktop
+USER0046,2025-10-28,2025-10-28,,Organic Search,Canada,desktop
+USER0047,2024-10-23,2024-10-24,,Direct,UK,desktop
+USER0048,2024-12-01,,,Organic Search,UK,mobile
+USER0049,2024-06-05,2024-06-13,,Paid Ads,Nigeria,desktop
+USER0050,2024-02-02,,,Paid Ads,USA,mobile
+USER0051,2024-02-04,,,Paid Ads,UK,mobile
+USER0052,2024-02-18,2024-02-24,2024-02-28,Direct,Germany,tablet
+USER0053,2024-08-14,2024-08-23,2024-08-29,Social Media,UK,desktop
+USER0054,2025-10-07,2025-10-14,2025-10-23,Organic Search,USA,mobile
+USER0055,2024-02-03,,,Organic Search,Canada,mobile
+USER0056,2024-03-28,2024-03-29,2024-04-04,Social Media,Canada,mobile
+USER0057,2024-11-24,2024-11-30,,Referral,USA,desktop
+USER0058,2024-03-16,2024-03-24,2024-04-07,Paid Ads,Nigeria,desktop
+USER0059,2024-11-03,,,Organic Search,UK,mobile
+USER0060,2024-12-26,,,Direct,Nigeria,mobile
+USER0061,2024-06-20,2024-06-24,2024-06-28,Organic Search,UK,mobile
+USER0062,2024-05-15,,,Organic Search,Canada,mobile
+USER0063,2024-05-07,2024-05-13,2024-05-24,Direct,USA,desktop
+USER0064,2025-06-14,2025-06-24,2025-07-08,Referral,USA,tablet
+USER0065,2024-09-25,2024-10-05,2024-10-17,Organic Search,UK,desktop
+USER0066,2024-03-20,2024-03-20,2024-04-01,Referral,UK,tablet
+USER0067,2025-07-31,2025-08-09,,Social Media,Nigeria,mobile
+USER0068,2024-05-25,,,Social Media,UK,mobile
+USER0069,2025-01-01,2025-01-05,,Direct,USA,desktop
+USER0070,2024-09-11,2024-09-15,2024-09-17,Direct,Germany,tablet
+USER0071,2025-06-22,,,Organic Search,Nigeria,mobile
+USER0072,2025-07-31,2025-08-02,2025-08-03,Organic Search,USA,desktop
+USER0073,2025-11-17,2025-11-20,2025-11-21,Referral,Canada,desktop
+USER0074,2024-08-18,2024-08-23,2024-08-24,Organic Search,UK,mobile
+USER0075,2025-08-08,2025-08-08,2025-08-12,Referral,Germany,mobile
+USER0076,2024-03-09,2024-03-13,2024-03-27,Organic Search,Nigeria,desktop
+USER0077,2024-02-29,,,Organic Search,Germany,mobile
+USER0078,2025-12-30,,,Direct,Canada,desktop
+USER0079,2024-10-10,2024-10-13,,Organic Search,Canada,mobile
+USER0080,2025-05-27,2025-05-27,,Organic Search,Germany,tablet
+USER0081,2024-03-31,2024-04-06,,Organic Search,Germany,tablet
+USER0082,2024-08-21,,,Organic Search,USA,mobile
+USER0083,2025-06-07,2025-06-08,2025-06-17,Social Media,UK,desktop
+USER0084,2025-11-10,,,Social Media,Canada,desktop
+USER0085,2025-05-09,2025-05-10,2025-05-15,Direct,UK,desktop
+USER0086,2024-10-25,2024-10-27,2024-11-09,Referral,Canada,tablet
+USER0087,2024-04-28,2024-05-08,2024-05-18,Social Media,Nigeria,desktop
+USER0088,2024-02-11,2024-02-20,,Paid Ads,Nigeria,desktop
+USER0089,2025-07-17,2025-07-19,2025-07-31,Paid Ads,Canada,tablet
+USER0090,2024-03-08,2024-03-09,2024-03-22,Organic Search,USA,tablet
+USER0091,2025-06-08,2025-06-12,2025-06-14,Organic Search,USA,mobile
+USER0092,2024-03-18,2024-03-27,2024-04-08,Direct,Nigeria,tablet
+USER0093,2024-04-02,2024-04-11,2024-04-23,Paid Ads,Nigeria,mobile
+USER0094,2024-05-22,2024-05-26,2024-05-28,Paid Ads,USA,mobile
+USER0095,2025-09-09,2025-09-17,2025-09-30,Referral,UK,tablet
+USER0096,2024-06-13,,,Paid Ads,UK,mobile
+USER0097,2025-11-21,2025-11-23,2025-11-27,Organic Search,USA,tablet
+USER0098,2025-07-30,,,Paid Ads,USA,desktop
+USER0099,2024-07-06,,,Direct,USA,desktop
+USER0100,2024-01-07,,,Social Media,Nigeria,mobile
+USER0101,2025-04-13,2025-04-13,2025-04-16,Direct,Nigeria,desktop
+USER0102,2025-02-14,2025-02-23,2025-03-08,Organic Search,USA,tablet
+USER0103,2025-08-12,,,Social Media,Nigeria,mobile
+USER0104,2024-11-20,2024-11-24,,Social Media,Canada,tablet
+USER0105,2024-01-30,,,Organic Search,Canada,desktop
+USER0106,2024-12-18,2024-12-25,,Paid Ads,Nigeria,mobile
+USER0107,2024-10-02,2024-10-03,2024-10-10,Organic Search,Germany,tablet
+USER0108,2024-09-05,,,Organic Search,UK,tablet
+USER0109,2024-09-13,2024-09-17,2024-09-24,Direct,Germany,tablet
+USER0110,2025-07-05,2025-07-13,2025-07-17,Social Media,USA,tablet
+USER0111,2025-01-19,,,Social Media,Canada,desktop
+USER0112,2024-09-12,2024-09-21,,Organic Search,Canada,mobile
+USER0113,2024-07-21,2024-07-29,2024-07-30,Paid Ads,Nigeria,mobile
+USER0114,2025-04-21,2025-04-25,2025-05-09,Social Media,UK,mobile
+USER0115,2024-07-09,,,Organic Search,Germany,tablet
+USER0116,2024-12-21,2024-12-29,2024-12-29,Social Media,Canada,tablet
+USER0117,2024-11-06,,,Paid Ads,Canada,mobile
+USER0118,2024-08-25,2024-09-01,2024-09-14,Organic Search,UK,desktop
+USER0119,2025-05-27,2025-06-02,2025-06-09,Organic Search,Nigeria,tablet
+USER0120,2025-09-07,2025-09-17,2025-09-30,Referral,USA,tablet
+USER0121,2025-07-17,2025-07-21,2025-07-27,Organic Search,Germany,mobile
+USER0122,2024-11-02,2024-11-05,2024-11-10,Referral,Canada,tablet
+USER0123,2025-05-27,,,Organic Search,Canada,desktop
+USER0124,2024-01-16,2024-01-24,2024-01-29,Direct,Nigeria,tablet
+USER0125,2024-08-29,,,Organic Search,UK,tablet
+USER0126,2025-08-06,2025-08-11,,Social Media,Canada,desktop
+USER0127,2025-03-01,2025-03-08,2025-03-16,Direct,Nigeria,desktop
+USER0128,2024-02-06,2024-02-15,2024-02-25,Social Media,Nigeria,tablet
+USER0129,2024-05-28,,,Referral,USA,desktop
+USER0130,2025-11-25,,,Paid Ads,Nigeria,tablet
+USER0131,2024-12-09,2024-12-15,2024-12-25,Organic Search,UK,desktop
+USER0132,2024-02-05,2024-02-12,2024-02-19,Organic Search,Nigeria,tablet
+USER0133,2025-08-28,2025-09-06,2025-09-18,Organic Search,UK,mobile
+USER0134,2025-02-25,2025-03-06,2025-03-13,Organic Search,USA,tablet
+USER0135,2024-08-12,2024-08-13,,Paid Ads,USA,desktop
+USER0136,2024-10-14,2024-10-19,2024-10-23,Organic Search,Germany,desktop
+USER0137,2024-02-03,,,Paid Ads,Canada,tablet
+USER0138,2025-11-27,2025-12-04,2025-12-12,Paid Ads,UK,mobile
+USER0139,2025-08-03,,,Organic Search,Canada,mobile
+USER0140,2024-06-14,2024-06-21,2024-06-23,Organic Search,UK,desktop
+USER0141,2025-03-10,,,Social Media,Germany,mobile
+USER0142,2025-10-31,2025-11-10,2025-11-11,Social Media,Canada,desktop
+USER0143,2024-05-27,2024-06-03,2024-06-17,Organic Search,Nigeria,desktop
+USER0144,2024-04-29,2024-05-04,2024-05-11,Social Media,UK,desktop
+USER0145,2025-07-04,,,Organic Search,UK,mobile
+USER0146,2025-11-19,2025-11-20,2025-11-26,Organic Search,Germany,tablet
+USER0147,2024-02-03,2024-02-09,2024-02-20,Organic Search,Canada,tablet
+USER0148,2024-10-18,2024-10-23,2024-11-03,Paid Ads,UK,tablet
+USER0149,2024-07-23,2024-08-02,2024-08-04,Paid Ads,Canada,tablet
+USER0150,2025-08-07,2025-08-16,,Social Media,UK,tablet
+USER0151,2025-02-01,2025-02-04,2025-02-17,Organic Search,Germany,desktop
+USER0152,2024-10-15,2024-10-21,,Organic Search,Germany,desktop
+USER0153,2025-04-06,2025-04-13,2025-04-20,Direct,Canada,tablet
+USER0154,2024-10-16,,,Direct,Canada,tablet
+USER0155,2024-02-11,2024-02-12,,Paid Ads,Nigeria,desktop
+USER0156,2025-11-28,2025-11-29,,Direct,UK,desktop
+USER0157,2025-09-08,2025-09-14,2025-09-27,Paid Ads,Germany,desktop
+USER0158,2024-04-06,2024-04-15,2024-04-23,Paid Ads,Nigeria,desktop
+USER0159,2025-05-12,,,Referral,Nigeria,tablet
+USER0160,2024-05-14,,,Direct,Germany,desktop
+USER0161,2024-09-30,2024-09-30,,Direct,Nigeria,tablet
+USER0162,2025-11-11,,,Organic Search,Nigeria,desktop
+USER0163,2024-03-12,,,Organic Search,Canada,desktop
+USER0164,2024-11-17,,,Direct,UK,desktop
+USER0165,2025-06-01,2025-06-09,2025-06-09,Organic Search,UK,desktop
+USER0166,2024-11-02,2024-11-08,2024-11-11,Paid Ads,Nigeria,tablet
+USER0167,2024-02-15,2024-02-20,,Paid Ads,Nigeria,desktop
+USER0168,2025-11-05,2025-11-08,2025-11-19,Direct,USA,mobile
+USER0169,2024-10-02,2024-10-10,2024-10-12,Referral,Nigeria,tablet
+USER0170,2024-12-02,,,Organic Search,USA,tablet
+USER0171,2024-08-14,2024-08-21,,Organic Search,Germany,desktop
+USER0172,2025-03-09,2025-03-13,2025-03-23,Direct,USA,mobile
+USER0173,2024-04-20,2024-04-23,,Organic Search,Nigeria,tablet
+USER0174,2024-11-12,,,Referral,Canada,desktop
+USER0175,2024-09-01,2024-09-07,2024-09-07,Paid Ads,Canada,tablet
+USER0176,2024-12-13,2024-12-15,,Direct,USA,mobile
+USER0177,2025-01-13,,,Social Media,USA,tablet
+USER0178,2024-03-07,,,Organic Search,Germany,tablet
+USER0179,2024-06-09,2024-06-11,2024-06-15,Direct,Canada,desktop
+USER0180,2024-10-15,,,Social Media,Germany,desktop
