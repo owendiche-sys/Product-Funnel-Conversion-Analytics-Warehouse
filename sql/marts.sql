@@ -3,6 +3,7 @@ DROP TABLE IF EXISTS dim_channel;
 DROP TABLE IF EXISTS fct_funnel_monthly;
 DROP TABLE IF EXISTS fct_channel_performance;
 DROP TABLE IF EXISTS fct_conversion_cohorts;
+DROP TABLE IF EXISTS mart_user_features;
 
 CREATE TABLE dim_user AS
 SELECT DISTINCT
@@ -168,3 +169,88 @@ LEFT JOIN conversion_flags cf
     ON uc.user_id = cf.user_id
 GROUP BY uc.cohort_month, uc.acquisition_channel
 ORDER BY uc.cohort_month, uc.acquisition_channel;
+
+CREATE TABLE mart_user_features AS
+WITH session_features AS (
+    SELECT
+        user_id,
+        COUNT(DISTINCT session_id) AS session_count,
+        ROUND(
+            SUM((julianday(session_end) - julianday(session_start)) * 24 * 60),
+            2
+        ) AS total_session_minutes,
+        ROUND(
+            AVG((julianday(session_end) - julianday(session_start)) * 24 * 60),
+            2
+        ) AS avg_session_minutes,
+        COUNT(DISTINCT landing_page) AS unique_landing_pages
+    FROM stg_sessions
+    GROUP BY user_id
+),
+event_features AS (
+    SELECT
+        user_id,
+        COUNT(*) AS event_count,
+        SUM(CASE WHEN event_name = 'view_pricing' THEN 1 ELSE 0 END) AS pricing_views,
+        SUM(CASE WHEN event_name = 'signup_started' THEN 1 ELSE 0 END) AS signup_started_events,
+        SUM(CASE WHEN event_name = 'signup_completed' THEN 1 ELSE 0 END) AS signup_completed_events,
+        SUM(CASE WHEN event_name = 'activation_completed' THEN 1 ELSE 0 END) AS activation_events,
+        SUM(CASE WHEN event_name = 'purchase_completed' THEN 1 ELSE 0 END) AS purchase_events
+    FROM stg_events
+    GROUP BY user_id
+),
+signup_features AS (
+    SELECT
+        user_id,
+        MIN(signup_method) AS signup_method
+    FROM stg_signups
+    GROUP BY user_id
+),
+conversion_features AS (
+    SELECT
+        user_id,
+        1 AS did_convert,
+        COUNT(DISTINCT conversion_id) AS conversion_count,
+        ROUND(SUM(revenue), 2) AS total_revenue
+    FROM stg_conversions
+    GROUP BY user_id
+)
+SELECT
+    u.user_id,
+    strftime('%Y-%m', u.first_seen_date) AS cohort_month,
+    u.acquisition_channel,
+    u.country,
+    u.device_type,
+    COALESCE(sf.signup_method, 'none') AS signup_method,
+    CASE WHEN u.signup_date IS NOT NULL THEN 1 ELSE 0 END AS did_signup,
+    CASE WHEN u.activation_date IS NOT NULL THEN 1 ELSE 0 END AS did_activate,
+    COALESCE(cf.did_convert, 0) AS did_convert,
+    COALESCE(cf.conversion_count, 0) AS conversion_count,
+    COALESCE(cf.total_revenue, 0) AS total_revenue,
+    COALESCE(sess.session_count, 0) AS session_count,
+    COALESCE(sess.total_session_minutes, 0) AS total_session_minutes,
+    COALESCE(sess.avg_session_minutes, 0) AS avg_session_minutes,
+    COALESCE(sess.unique_landing_pages, 0) AS unique_landing_pages,
+    COALESCE(evt.event_count, 0) AS event_count,
+    COALESCE(evt.pricing_views, 0) AS pricing_views,
+    COALESCE(evt.signup_started_events, 0) AS signup_started_events,
+    COALESCE(evt.signup_completed_events, 0) AS signup_completed_events,
+    COALESCE(evt.activation_events, 0) AS activation_events,
+    COALESCE(evt.purchase_events, 0) AS purchase_events,
+    COALESCE(
+        CAST(julianday(u.signup_date) - julianday(u.first_seen_date) AS INTEGER),
+        -1
+    ) AS days_to_signup,
+    COALESCE(
+        CAST(julianday(u.activation_date) - julianday(u.signup_date) AS INTEGER),
+        -1
+    ) AS days_to_activation
+FROM stg_users u
+LEFT JOIN session_features sess
+    ON u.user_id = sess.user_id
+LEFT JOIN event_features evt
+    ON u.user_id = evt.user_id
+LEFT JOIN signup_features sf
+    ON u.user_id = sf.user_id
+LEFT JOIN conversion_features cf
+    ON u.user_id = cf.user_id;

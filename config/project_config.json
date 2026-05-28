@@ -1,0 +1,9 @@
+{
+  "database_path": "database/product_funnel_analytics.db",
+  "raw_data_dir": "data/raw",
+  "model_dir": "models",
+  "report_dir": "reports",
+  "target": "did_convert",
+  "random_state": 42,
+  "test_size": 0.25
+}

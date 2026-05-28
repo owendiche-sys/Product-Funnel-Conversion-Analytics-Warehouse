@@ -20,6 +20,8 @@ TABLES = [
     "fct_funnel_monthly",
     "fct_channel_performance",
     "fct_conversion_cohorts",
+    "mart_user_features",
+    "mart_conversion_scores",
 ]
 
 
@@ -32,9 +34,12 @@ def main() -> None:
         print("-" * 40)
 
         for table in TABLES:
-            cursor.execute(f"SELECT COUNT(*) FROM {table}")
-            count = cursor.fetchone()[0]
-            print(f"{table}: {count}")
+            try:
+                cursor.execute(f"SELECT COUNT(*) FROM {table}")
+                count = cursor.fetchone()[0]
+                print(f"{table}: {count}")
+            except sqlite3.OperationalError:
+                print(f"{table}: not built yet")
 
         print("\nSample rows from fct_funnel_monthly:")
         cursor.execute("SELECT * FROM fct_funnel_monthly LIMIT 5")
@@ -43,6 +48,11 @@ def main() -> None:
 
         print("\nSample rows from fct_channel_performance:")
         cursor.execute("SELECT * FROM fct_channel_performance LIMIT 5")
+        for row in cursor.fetchall():
+            print(row)
+
+        print("\nSample rows from mart_user_features:")
+        cursor.execute("SELECT * FROM mart_user_features LIMIT 5")
         for row in cursor.fetchall():
             print(row)
 

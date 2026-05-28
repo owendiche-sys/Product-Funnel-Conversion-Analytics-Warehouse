@@ -66,3 +66,21 @@ SELECT
     conversion_rate_pct
 FROM fct_conversion_cohorts
 ORDER BY cohort_month, acquisition_channel;
+
+-- 6. Modeling feature sample
+SELECT
+    user_id,
+    acquisition_channel,
+    country,
+    device_type,
+    did_signup,
+    did_activate,
+    did_convert,
+    session_count,
+    event_count,
+    pricing_views,
+    days_to_signup,
+    days_to_activation
+FROM mart_user_features
+ORDER BY user_id
+LIMIT 20;

@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.streamlit/
+
+database/*.db
+models/*.pkl
+models/*.joblib
+models/*.json
+reports/*.csv
+reports/*.json
+reports/*.png
+reports/*.log
+
+!.gitkeep
